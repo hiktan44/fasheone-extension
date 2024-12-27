@@ -1,0 +1,22 @@
+{
+  "appName": {
+    "message": "FASHEON",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "See how clothes look on you before you buy on your favorite shopping websites.",
+    "description": "The description of the application"
+  },
+  "tryOnButton": {
+    "message": "Try On",
+    "description": "Try on button text"
+  },
+  "uploadButton": {
+    "message": "Upload Photo",
+    "description": "Upload photo button"
+  },
+  "loginButton": {
+    "message": "Log In",
+    "description": "Login button"
+  }
+}

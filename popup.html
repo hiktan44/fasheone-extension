@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FasheONE Virtual Try On</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="assets/icons/48.png" alt="FasheONE">
+                    FasheONE
+                </div>
+                <span class="version-tag">v1.0</span>
+            </div>
+            <div class="header-right">
+                <a href="https://fasheone.com" target="_blank" class="website-link">fasheone.com</a>
+                <button class="login-btn">Giriş</button>
+            </div>
+        </header>
+
+        <nav class="app-nav">
+            <a href="#" class="nav-link active">Dene</a>
+            <a href="#" class="nav-link">Geçmiş</a>
+            <a href="#" class="nav-link">Hesap</a>
+        </nav>
+
+        <div class="trial-notice">
+            3 deneme hakkınız kaldı, daha fazlası için giriş yapın
+        </div>
+
+        <main class="app-content">
+            <div class="content-header">
+                <h2>Sanal Deneme</h2>
+                <p>Seçtiğiniz ürünü deneyin</p>
+            </div>
+
+            <div class="category-selector">
+                <label>Kategori seçin:</label>
+                <div class="category-buttons">
+                    <button class="category-btn" data-category="top">Üst</button>
+                    <button class="category-btn" data-category="bottom">Alt</button>
+                    <button class="category-btn" data-category="dress">Elbise</button>
+                </div>
+            </div>
+
+            <div class="try-on-container">
+                <div class="product-container">
+                    <h3>Ürün</h3>
+                    <div class="image-container">
+                        <img id="selectedProductImage" src="" alt="Seçilen Ürün">
+                        <div id="productImagePlaceholder" class="image-placeholder">
+                            <p>Henüz ürün seçilmedi</p>
+                            <p>Lütfen ürün sayfasından bir ürün seçin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-container">
+                    <h3>Model Fotoğrafı</h3>
+                    <div class="image-container">
+                        <img id="userImage" src="" alt="Model Fotoğrafı">
+                        <div class="image-placeholder">
+                            <p>Fotoğrafınızı yükleyin</p>
+                            <button class="upload-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                Fotoğraf Yükle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="try-on-btn" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+                Dene
+            </button>
+        </main>
+
+        <footer class="app-footer">
+            <p>Uyarı: Bu eklenti genel bir fikir verir ve gerçek görünümü tam olarak yansıtmayabilir.</p>
+            <p class="copyright">© 2024 FasheONE. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

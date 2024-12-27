@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHEONE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title-section">
+            <span class="title">FASHEONE</span>
+            <span class="version">Beta 0.2.7</span>
+        </div>
+        <div class="header-right">
+            <a href="https://fasheone.com" target="_blank" class="website-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M2 12h20"></path>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                fasheone.com
+            </a>
+            <button id="loginBtn" class="login-btn">Giriş Yap</button>
+            <button id="closeBtn" class="close-btn">×</button>
+        </div>
+    </div>
+
+    <nav class="tabs" id="tabsContainer">
+        <button class="tab active" data-tab="tryOn">Dene</button>
+        <button class="tab" data-tab="history">Geçmiş</button>
+        <button class="tab" data-tab="account">Hesap</button>
+    </nav>
+
+    <div class="main-content">
+        <div id="tryOnContent" class="tab-content active">
+            <div class="notification">
+                3 deneme hakkınız kaldı, daha fazlası için giriş yapın
+            </div>
+
+            <h2>Ürünü Dene</h2>
+            <p>Seçtiğiniz ürünü deneyin</p>
+
+            <div class="try-on-container">
+                <div class="image-box">
+                    <img id="productPreview" class="preview-image">
+                    <p id="productPlaceholder">Ürün görseli seçilmedi, lütfen katalog sekmesinden bir ürün seçin</p>
+                </div>
+                <div class="image-box">
+                    <img id="modelPreview" class="preview-image">
+                    <div id="resultPreview" class="result-preview hidden">
+                        <img id="resultImage" class="preview-image">
+                        <button id="downloadBtn" class="download-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            İndir
+                        </button>
+                    </div>
+                    <p id="modelPlaceholder">Fotoğraf yükleyin</p>
+                    <input type="file" id="uploadInput" accept="image/*" class="hidden">
+                    <button id="uploadBtn" class="upload-btn">Fotoğraf Yükle</button>
+                </div>
+            </div>
+
+            <div class="process-container hidden" id="processContainer">
+                <div class="process-spinner"></div>
+                <p>Deneme işleminiz gerçekleştiriliyor...</p>
+            </div>
+
+            <button id="tryOnBtn" class="try-on-btn">Dene</button>
+        </div>
+
+        <div id="historyContent" class="tab-content">
+            <h2>Geçmiş Denemeleriniz</h2>
+            <p>Giriş yaparak geçmiş denemelerinizi görüntüleyebilirsiniz.</p>
+        </div>
+
+        <div id="accountContent" class="tab-content">
+            <h2>Hesap</h2>
+            <p>Giriş yaparak hesap bilgilerinizi görüntüleyebilirsiniz.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Uyarı: Bu eklenti genel bir fikir verir ve gerçekteki görünümü tam olarak yansıtmayabilir.
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

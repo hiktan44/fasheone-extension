@@ -1,0 +1,26 @@
+{
+  "appName": {
+    "message": "FASHEONE",
+    "description": "Uygulamanın adı"
+  },
+  "appDesc": {
+    "message": "E-ticaret sitelerinde ürünleri kendi fotoğrafınız üzerinde deneyin",
+    "description": "Uygulamanın açıklaması"
+  },
+  "tryButton": {
+    "message": "Dene",
+    "description": "Deneme butonu metni"
+  },
+  "loadingText": {
+    "message": "İşleniyor...",
+    "description": "Yükleme durumu metni"
+  },
+  "errorGeneric": {
+    "message": "Bir hata oluştu",
+    "description": "Genel hata mesajı"
+  },
+  "successMessage": {
+    "message": "Resim başarıyla işlendi!",
+    "description": "Başarı mesajı"
+  }
+}
